@@ -1,2 +1,29 @@
+.holder {
+    display: flex;
+    justify-content: center;  /* Center items horizontally */
+    align-items: center;  /* Center items vertically */
+    flex-wrap: wrap;  /* Allow wrapping to the next row */
+    gap: 5px;  /* Optional: Adds spacing between items */
+}
 
-/* Your CSS Code here. */
+.item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    border: 1px solid black;
+}
+
+/* Add different colors for distinction */
+.item:nth-child(1) { background-color: red; }
+.item:nth-child(2) { background-color: blue; }
+.item:nth-child(3), 
+.item:nth-child(4), 
+.item:nth-child(5), 
+.item:nth-child(6) { background-color: green; }
+.item:nth-child(7) { background-color: red; }
+.item:nth-child(8) { background-color: blue; }
